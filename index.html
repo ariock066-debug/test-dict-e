@@ -23,9 +23,12 @@
   }
 }
 </script>
+<!-- Ajout de Babel pour transpiler JSX et TypeScript dans le navigateur -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body class="bg-blue-50">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Changement du type de script en "text/babel" pour que Babel le traite -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
